@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 8</title>
+</head>
+<body>
+    <script>
+        var frase = prompt("Digite uma frase: ");
+        frase = frase.toLowerCase()
+        var quant=0;
+        for(let i=0; i<frase.length; i++){
+            if(frase[i] === 'a' || frase[i] === 'e' || frase[i] === 'i' || frase[i] === 'o' || frase[i] === 'u'){
+                quant++;
+            }
+        }
+        alert(`A quantidade de vogais é: ${quant}`);
+    </script>
+</body>
+</html>
