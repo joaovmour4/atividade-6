@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 7</title>
+</head>
+<body>
+    <script>
+        var listaNums = [];
+        var maior;
+        var menor;
+        while(true){
+            var entrada = prompt("Digite um número, ou '0' para parar.");
+            entrada = Number(entrada);
+            if(entrada === 0){
+                break;
+            }
+            listaNums.append(entrada);
+        }
+
+        maior = listaNums[0];
+        menor = listaNums[0];
+
+        for(let i=1; i<listaNums.length; i++){
+            if(listaNums[i] > maior){
+                maior = listaNums[i];
+            }
+            if(listaNums[i] < menor){
+                menor = listaNums[i];
+            }
+        }
+
+        alert(`O maior número foi ${maior} e o Menor número foi ${menor}`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 5</title>
+</head>
+<body>
+    <script>
+        var entrada = prompt("Digite um número: ");
+        var nums = []
+        for(let i=1; i<entrada; i++){
+            var contador = 0;
+            for(let j=1; j<entrada; j++){
+                for(let k=1; k<entrada; k++){
+                    if(j % k === 0){
+                        contador++;
+                    }
+                }
+            }
+            if(contador <= 2){
+                nums[i] = j;
+            }
+            contador = 0;
+        }
+
+        for(let i=0; nums.length; i++){
+            alert(`O número ${nums[i]} é primo!`);
+        }
+    </script>
+</body>
+</html>

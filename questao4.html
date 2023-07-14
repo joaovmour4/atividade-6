@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 4</title>
+</head>
+<body>
+    <script>
+        var idade = prompt("Digite sua idade: ");
+        idade = Number(idade);
+
+        if(idade < 16){
+            alert("Não está apta a votar!");
+        }else if((idade >= 16 && idade < 18) || idade >= 70){
+            alert("Está apta, mas não está obrigada a votar!");
+        }else{
+            alert("Está obrigada a votar!");
+        }
+    </script>
+</body>
+</html>

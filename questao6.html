@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 6</title>
+</head>
+<body>
+    <script>
+        var entrada = prompt("Digite um número: ");
+        entrada = Number(entrada);
+        var result = '1, 1';
+        var n1 = 1;
+        var n2 = 1;
+        while(n2+n1 <= entrada){
+            let aux = n2;
+            n2 = n1+n2;
+            n1 = aux;
+            result = result + `, ${n2}`
+        }
+        alert(`${result}, ${entrada}`);
+    </script>
+</body>
+</html>

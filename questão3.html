@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 3</title>
+</head>
+<body>
+    <script>
+        const entradas = [];
+        var todas = 0;
+        for(let i=0; i<3; i++){
+            entradas[i] = prompt(`Digite a idade número ${i+1}`);
+            entradas[i] = Number(entradas[i]);
+            if(entradas[i] >= 18){
+                todas++;
+            }
+        }
+        if(todas === 3){
+            alert("Todas são maiores de idade");
+        }else if(todas <=2 && todas >= 1){
+            alert("Alguma é maior de idade");
+        }else if(todas === 0){
+            alert("Todas são menores de idade");
+        }
+    </script>
+</body>
+</html>
